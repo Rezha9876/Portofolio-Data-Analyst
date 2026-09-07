@@ -1,45 +1,58 @@
-# 📊 Customer Cohort & Retention Analysis
+#  Customer Cohort & Retention Analysis
 
-## 📌 Business Overview
-Dalam industri e-commerce dan retail, mempertahankan pelanggan (*customer retention*) jauh lebih efisien dibandingkan terus-menerus mencari pelanggan baru. Proyek ini bertujuan untuk mengelompokkan pelanggan berdasarkan waktu transaksi pertama mereka (*cohort*) dan menganalisis pola retensi serta perilaku pembelian dari waktu ke waktu.
+## Business Overview
 
----
-
-## 🎯 Project Objectives
-* **Mengidentifikasi Pola Retensi:** Mengetahui berapa persentase pelanggan yang kembali melakukan transaksi setelah bulan pertama.
-* **Evaluasi Perilaku Pelanggan:** Menganalisis perbedaan aktivitas pembelian antar *cohort* bulanan.
-* **Rekomendasi Bisnis:** Memberikan wawasan berbasis data untuk mendukung strategi *marketing* dan *customer engagement*.
+Dalam bisnis e-commerce dan retail, mempertahankan pelanggan yang sudah pernah bertransaksi sering kali lebih efektif daripada terus mencari pelanggan baru. Melalui project ini, saya menganalisis perilaku pelanggan menggunakan **cohort analysis** untuk melihat seberapa banyak pelanggan kembali melakukan pembelian setelah transaksi pertama mereka.
 
 ---
 
-## 🛠️ Tools & Technologies
-* **Python 3.x**
-* **Google Colab** (Environment)
-* **Pandas & NumPy** (Data Cleaning & Manipulation)
-* **Seaborn & Matplotlib** (Data Visualization & Heatmap)
+## Project Objectives
+
+Project ini bertujuan untuk:
+
+- Menganalisis tingkat **customer retention** dari bulan ke bulan.
+- Membandingkan pola pembelian antar **cohort** berdasarkan bulan transaksi pertama pelanggan.
+- Memberikan insight yang dapat digunakan untuk mendukung strategi pemasaran dan meningkatkan loyalitas pelanggan.
 
 ---
 
-## 📈 Methodology
-1. **Data Preprocessing:**
-   * Cleaning data dari transaksi *missing values* atau nilai negatif (pembatalan/retur).
-   * Menentukan *Cohort Month* (bulan transaksi pertama pelanggan) dan *Transaction Month*.
-2. **Cohort Calculation:**
-   * Menghitung rentang bulan (*cohort index*) antara transaksi pertama dengan transaksi berikutnya.
-   * Membuat *Cohort Matrix* berdasarkan jumlah pelanggan aktif (*active users*).
-3. **Retention Rate Analysis:**
-   * Membagi jumlah pelanggan aktif di bulan ke-$n$ dengan total pelanggan awal di bulan pertama untuk mendapatkan persentase retensi.
-   * Visualisasi menggunakan *Heatmap*.
+## Tools & Technologies
+
+- **Python 3**
+- **Google Colab**
+- **Pandas & NumPy** untuk proses data cleaning dan analisis.
+- **Matplotlib & Seaborn** untuk visualisasi data dan pembuatan heatmap.
 
 ---
 
-## 💡 Key Insights & Findings
-* **Persentase Retensi Awal:** Menunjukkan penurunan terbesar terjadi pada bulan pertama setelah pembelian pertama (*Month 1 drop-off*).
-* **Perilaku Cohort Tertentu:** Cohort bulan-bulan tertentu menunjukkan tingkat retensi lebih tinggi yang dipengaruhi oleh tren musiman atau promosi khusus.
+## Methodology
+
+1. **Data Preprocessing**
+   - Membersihkan data transaksi, termasuk menghapus data yang tidak valid seperti nilai kosong, retur, atau pembatalan transaksi.
+   - Menentukan **Cohort Month** (bulan transaksi pertama pelanggan) dan **Transaction Month**.
+
+2. **Cohort Analysis**
+   - Menghitung selisih bulan antara transaksi pertama dan transaksi berikutnya untuk setiap pelanggan.
+   - Menyusun **cohort matrix** berdasarkan jumlah pelanggan yang masih aktif di setiap periode.
+
+3. **Retention Rate**
+   - Menghitung persentase pelanggan yang kembali bertransaksi pada bulan ke-*n* dibandingkan dengan jumlah pelanggan pada bulan pertama.
+   - Menampilkan hasil analisis dalam bentuk **heatmap** agar pola retensi lebih mudah dibaca.
 
 ---
 
-## 🚀 How to Run
-Anda dapat menjalankan dan mencoba ulang kode notebook ini secara langsung melalui Google Colab:
+## Key Insights
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rezha9876/Portofolio-Data-Analyst/blob/main/cohort-analysis/Cohort_Analysis.ipynb)
+Beberapa temuan utama dari analisis ini:
+
+- Tingkat retensi mengalami penurunan paling besar setelah bulan pertama sejak pelanggan melakukan pembelian pertama.
+- Beberapa cohort memiliki retensi yang lebih baik dibandingkan cohort lainnya, yang kemungkinan dipengaruhi oleh periode promosi atau faktor musiman.
+
+---
+
+## How to Run
+
+Notebook ini dapat dijalankan langsung melalui Google Colab untuk melihat proses analisis dan visualisasi secara lengkap.
+
+**Open in Google Colab**  
+https://colab.research.google.com/github/Rezha9876/Portofolio-Data-Analyst/blob/main/cohort-analysis/Cohort_Analysis.ipynb
