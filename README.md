@@ -4,8 +4,6 @@
 
 Dalam bisnis e-commerce dan retail, mempertahankan pelanggan yang sudah pernah bertransaksi sering kali lebih efektif daripada terus mencari pelanggan baru. Melalui project ini, saya menganalisis perilaku pelanggan menggunakan **cohort analysis** untuk melihat seberapa banyak pelanggan kembali melakukan pembelian setelah transaksi pertama mereka.
 
----
-
 ## Project Objectives
 
 Project ini bertujuan untuk:
@@ -14,16 +12,12 @@ Project ini bertujuan untuk:
 - Membandingkan pola pembelian antar **cohort** berdasarkan bulan transaksi pertama pelanggan.
 - Memberikan insight yang dapat digunakan untuk mendukung strategi pemasaran dan meningkatkan loyalitas pelanggan.
 
----
-
 ## Tools & Technologies
 
 - **Python 3**
 - **Google Colab**
 - **Pandas & NumPy** untuk proses data cleaning dan analisis.
 - **Matplotlib & Seaborn** untuk visualisasi data dan pembuatan heatmap.
-
----
 
 ## Methodology
 
@@ -39,8 +33,6 @@ Project ini bertujuan untuk:
    - Menghitung persentase pelanggan yang kembali bertransaksi pada bulan ke-*n* dibandingkan dengan jumlah pelanggan pada bulan pertama.
    - Menampilkan hasil analisis dalam bentuk **heatmap** agar pola retensi lebih mudah dibaca.
 
----
-
 ## Key Insights
 
 Beberapa temuan utama dari analisis ini:
@@ -49,8 +41,6 @@ Beberapa temuan utama dari analisis ini:
 - Beberapa cohort memiliki retensi yang lebih baik dibandingkan cohort lainnya, yang kemungkinan dipengaruhi oleh periode promosi atau faktor musiman.
 
 ---
-
-## How to Run
 
 Notebook ini dapat dijalankan langsung melalui Google Colab untuk melihat proses analisis dan visualisasi secara lengkap.
 
